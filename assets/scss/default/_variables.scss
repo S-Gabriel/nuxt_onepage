@@ -23,7 +23,7 @@ $red-color: #F0263F;
 $tarkis-color: #19D2A8;
 $purple-color: #B013FE;
 $purple-color-2: #AC61EE;
-$body-color: #333333;
+$body-color: #2a3336;
 $heading-color: #222222;
 $bg-grey: #f5f5f5;
 $border-color: #eeeeee;
@@ -202,7 +202,7 @@ $custom-container: 'only screen and (min-width: 1400px)';
         max-width: 450px;
     }
 }
- 
+
 @media #{$small-mobile} {
     .container {
         max-width: 320px;

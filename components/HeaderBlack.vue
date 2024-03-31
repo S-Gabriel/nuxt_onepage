@@ -22,14 +22,6 @@
 
                         <!-- Header Right start -->
                         <div class="header-right">
-                            <!-- Start Popup Search Wrap -->
-                            <div class="popup-search-wrap">
-                                <button class="btn-search-click" @click="$emit('toggleSearch')">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                            <!-- End Popup Search Wrap -->
-
                             <!-- Start Hamberger -->
                             <div class="manu-hamber popup-mobile-click d-block d-lg-none black-version d-block d-xl-none" @click="$emit('togglenav')">
                                 <div>
@@ -47,7 +39,7 @@
 </template>
 
 <script>
-    import Navigation from '@/components/Navigation';
+    import Navigation from '@/components/Navigation.vue';
 
     export default {
         components: {
@@ -83,4 +75,12 @@
         box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
         animation: 900ms cubic-bezier(0.2, 1, 0.22, 1) 0s normal none 1 running fadeInDown;
     }
+    .header-default {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        position: fixed;
+    }
+
 </style>

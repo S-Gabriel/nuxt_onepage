@@ -1,5 +1,5 @@
 /* =====================
-    Team Area 
+    Team Area
 ========================*/
 .team-heading {
     .heading-left {
@@ -491,7 +491,7 @@
         }
     }
 
-    // Team Style 4    
+    // Team Style 4
     &.team_style--4{
         text-align: center;
 
@@ -533,7 +533,7 @@
                         font-size: 20px;
                         line-height: 1.4;
                         margin-bottom: 2px;
-                        color: #222222;
+                        color: #333333;
                         font-family: $body-font;
                     }
                 }
@@ -554,33 +554,15 @@
                     }
                 }
             }
-        } 
+        }
     }
 }
 
 .team-bottom-text-image{
     background-repeat: no-repeat;
     background-position: left bottom;
-    
+
     @media #{$md-layout, $sm-layout} {
         background-size: 90%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 <template>
-    <div class="brook-service-area bg_color--13">
-        <div class="row align-items-center">
+    <div class="brook-service-area  pt-3">
+        <div class="row align-items-center bg_color--13">
             <div class="col-xl-7">
                 <div class="row startupservice-wrapper mtn--40">
                     <div class="col-lg-6 mt--40" v-for="feature in data.features" :key="feature.id">

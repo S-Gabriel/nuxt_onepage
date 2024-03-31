@@ -1,23 +1,7 @@
-<!-- <template> -->
-<!--     <div class="main-container"> -->
-<!--         <OffCanvasMobileMenu :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" /> -->
-<!--         <SearchPopup :class="{'search-popup-open' : searchOpen}" @toggleSearch="searchOpen = !searchOpen" /> -->
-<!--         <HeroStartUp /> -->
-<!--         <FeatureStartUp /> -->
-<!--         <WhatWeDo /> -->
-<!--         <EffectiveSolution /> -->
-<!--         <StartUpStratagy /> -->
-<!--         <PortfolioItemFilter /> -->
-<!--         <NewsletterCta /> -->
-<!--         <FooterTwo /> -->
-<!--     </div> -->
-<!-- </template> -->
-
 <template>
     <div class="main-container">
         <HeaderBlack @togglenav="navOpen = !navOpen" @toggleSearch="searchOpen = !searchOpen" />
         <OffCanvasMobileMenu :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" />
-        <SearchPopup :class="{'search-popup-open' : searchOpen}" @toggleSearch="searchOpen = !searchOpen" />
         <HeroStartUp />
         <FeatureStartUp />
         <WhatWeDo />
@@ -31,11 +15,15 @@
 
 
 <script>
-    // import FeatureStartUp from "@/components/sections/FeatureStartUp"
+    import HeaderBlack from "@/components/HeaderBlack.vue"
+    import HeroStartUp from "@/components/HeroStartUp.vue"
+
+    import FeatureStartUp from "@/components/FeatureStartUp"
     // import StartUpStratagy from "@/components/sections/StartUpStratagy"
     // import PortfolioItemFilter from "@/components/sections/PortfolioItemFilter"
     export default {
         components: {
+            HeaderBlack,
             // FeatureStartUp,
             // StartUpStratagy,
             // PortfolioItemFilter
@@ -53,3 +41,13 @@
         }
     };
 </script>
+
+
+<style lang="scss">
+    body {
+        color: $body-color;
+        font-weight: 500;
+    }
+
+
+</style>
