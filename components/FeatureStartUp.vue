@@ -1,32 +1,15 @@
 <template>
     <div class="brook-service-area  pt-3">
-        <div class="row align-items-center bg_color--13">
+        <div class="row align-items-center gradient-background">
             <div class="col-xl-7">
                 <div class="row startupservice-wrapper mtn--40">
                     <div class="col-lg-6 mt--40" v-for="feature in data.features" :key="feature.id">
-                        <FeatureItemStyleOne :feature="feature" />
+                        <FeatureItemStyle :feature="feature" />
                     </div>
                 </div>
             </div>
-            <div class="col-xl-5">
-                <div class="clint-succeed bg_image--24 ptb--220 ptb-md--80 ptb-lg--80 ptb_lp--130 ptb-sm--60" data-black-overlay="9" :style="{ backgroundImage: `url('/img/bg/bg-image-24.jpg')` }">
-                    <div class="row align-items-center plr_md--40 plr_sm--40">
-                        <div class="col-lg-4">
-                            <a href="https://www.youtube.com/watch?v=9No-FiEInLA" target="_blank">
-                                <div class="video-btn">
-                                    <div class="play__btn">
-                                        <div class="video-icon second-icon yellow-color-2"></div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="content pr--30 pr_sm--0">
-                                <h3 class="heading heading-h3 font-32 text-white line-height-1-88">We help our clients succeed by delivering products that improve life, work and play.</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div v-if="!isMobile" class="col-xl-5 client-succeed d-flex justify-content-center">
+                <img src="/img/features_background.png" alt="We help out clients">
             </div>
         </div>
     </div>
@@ -34,11 +17,15 @@
 
 <script>
     import data from '../../data/features.json';
+    import FeatureItemStyle from "@/components/FeatureItemStyle.vue"
 
     export default {
         components: {
-            FeatureItemStyleOne: () => import('@/components/FeatureItemStyleOne'),
+            FeatureItemStyle,
         },
+
+        props: ['isMobile'],
+
         data () {
             return {
                 data
@@ -46,3 +33,16 @@
         }
     };
 </script>
+
+<style lang="scss">
+    .gradient-background {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,6,113,1) 27%, rgba(253,121,112,1) 100%);
+    }
+
+    .client-succeed img {
+        width: 100%;
+        height: 100%;
+    }
+
+</style>
