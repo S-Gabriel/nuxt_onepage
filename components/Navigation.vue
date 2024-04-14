@@ -1,20 +1,20 @@
 <template>
-    <nav class="page_nav">
+    <nav class="page_nav pr--200">
         <ul class="mainmenu">
             <li class="pe-4 ps-4 lavel-1 slide--megamenu">
-                <span class="pb-2">Home</span>
+                <span class="pb-2 theme-color-2">Home</span>
             </li>
             <li class="pe-4 lavel-1 slide--megamenu">
-                <span class="pb-2">Pages</span>
+                <span class="pb-2 theme-color-2">Pages</span>
             </li>
             <li class="pe-4 lavel-1 slide--megamenu">
-                <span class="pb-2">Portfolio</span>
+                <span class="pb-2 theme-color-2">Portfolio</span>
             </li>
             <li class="pe-4 lavel-1 slide--megamenu">
-                <span class="pb-2">Elements</span>
+                <span class="pb-2 theme-color-2">Elements</span>
             </li>
             <li class="pe-4 lavel-1 slide--megamenu">
-                <span class="pb-2">Blog</span>
+                <span class="pb-2 theme-color-2">Blog</span>
             </li>
         </ul>
     </nav>

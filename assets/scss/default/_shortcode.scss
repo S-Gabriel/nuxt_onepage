@@ -7,7 +7,7 @@
 
 
 
-/*================================================ 
+/*================================================
  font-family: 'Poppins', sans-serif;
  font-family: 'Permanent Marker', cursive;
  font-family: 'Playfair Display', serif;
@@ -16,7 +16,7 @@
  font-family: 'Roboto', sans-serif;
  font-family: 'Reenie Beanie', cursive;
  font-family: 'CerebriSans';
- 
+
  =================================================*/
 
 
@@ -284,7 +284,7 @@
     // background-image: url("../img/icons/text.png");
     background-repeat: no-repeat;
     background-position: right center;
-    
+
     @media #{$md-layout} {
         background-size: 750px;
     }
@@ -518,7 +518,7 @@
 
 
 /*---------------------------
-Section Separation  
+Section Separation
 ----------------------------*/
 
 @for $i from 1 through 30 {
@@ -559,7 +559,7 @@ Section Separation
 .space_dec--none{
     @media #{$md-layout} {
         margin-top: 0 !important;
-        
+
     }
     @media #{$sm-layout} {
         margin-top: 0 !important;
@@ -591,7 +591,7 @@ Section Separation
 
 .space_dec--100 {
     margin-top: -100px;
-    
+
 
     @media #{$md-layout} {
         margin-top: 0 !important;
@@ -693,7 +693,7 @@ Section Separation
 
 
 /* =================================
-    Responsive Spacing Css 
+    Responsive Spacing Css
 ====================================*/
 
 @media #{$laptop-device}{
@@ -712,7 +712,7 @@ Section Separation
 
 // Padding Spacing
 @media #{$lg-layout} {
-    
+
     .pr_lg--0{
         padding-right: 0;
     }
@@ -751,7 +751,7 @@ Section Separation
     }
 
     @for $i from 1 through 20 {
-        
+
     }
 
     @for $i from 1 through 60 {
@@ -884,7 +884,7 @@ Section Separation
 
 
 /*-----------------------
-Padding Top Bottom 
+Padding Top Bottom
 ----------------------------*/
 /* Section Padding Top Bottom */
 
@@ -1213,7 +1213,7 @@ Padding Top Bottom
 .max-width--600 {
     max-width: 600px;
     width: 100%;
-    
+
     @media #{$md-layout} {
         max-width: 100%;
     }
@@ -1524,7 +1524,7 @@ textarea:-ms-input-placeholder {
 
 
 /*--------------------------
-	Overlay styles 
+	Overlay styles
 ---------------------------*/
 
 [data-overlay],

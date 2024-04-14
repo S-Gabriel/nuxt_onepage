@@ -74,7 +74,7 @@
                     font-size: 40px;
                 }
                 @media #{$small-mobile}{
-                    font-size: 32px;
+                    font-size: 30px;
                 }
             }
             h5 {
