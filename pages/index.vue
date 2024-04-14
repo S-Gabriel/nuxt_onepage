@@ -1,10 +1,11 @@
 <template>
     <div class="main-container">
-        <HeaderBlack @togglenav="navOpen = !navOpen" @toggleSearch="searchOpen = !searchOpen" :isMobile="isMobile()"/>
+        <Header @togglenav="navOpen = !navOpen" @toggleSearch="searchOpen = !searchOpen" :isMobile="isMobile()"/>
         <OffCanvasMobileMenu :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" />
-        <HeroStartUp :isMobile="isMobile()"/>
-        <MusicianIconBox/>
+        <Banner :isMobile="isMobile()"/>
+        <OurMission/>
         <FeatureStartUp :isMobile="isMobile()"/>
+        <Portfolio addClass="ptb-md--80 ptb-sm--80 poss_relative"/>
         <ContactUs/>
         <!-- <EffectiveSolution /> -->
         <!-- <StartUpStratagy /> -->
@@ -16,19 +17,25 @@
 
 
 <script>
-    import HeaderBlack from "@/components/HeaderBlack.vue"
-    import HeroStartUp from "@/components/HeroStartUp.vue"
-
+    import Header from "@/components/Header.vue"
+    import OffCanvasMobileMenu from "~/components/OffCanvasMobileMenu.vue"
+    import Banner from "@/components/Banner.vue"
     import FeatureStartUp from "@/components/FeatureStartUp.vue"
-    import WhatWeDo from "@/components/WhatWeDo.vue"
-    import MusicianIconBox from "@/components/MusicianIconBox.vue"
+    import OurMission from "@/components/OurMission.vue"
     import ContactUs from "@/components/ContactUs.vue"
+    import Portfolio from "@/components/Portfolio.vue"
     // import StartUpStratagy from "@/components/sections/StartUpStratagy"
     // import PortfolioItemFilter from "@/components/sections/PortfolioItemFilter"
 
     export default {
         components: {
-            HeaderBlack,
+            Header,
+            OffCanvasMobileMenu,
+            Banner,
+            OurMission,
+            FeatureStartUp,
+            Portfolio,
+            ContactUs,
             // FeatureStartUp,
             // StartUpStratagy,
             // PortfolioItemFilter
@@ -58,7 +65,7 @@
         },
         mounted () {
             window.addEventListener('resize', this.isMobile);
-            document.body.classList.add('template-color-5', 'template-font-1', 'bg_color--16')
+            document.body.classList.add('template-font-1', 'bg_color--16')
         },
         unmounted() {
             window.removeEventListener('resize', this.isMobile);

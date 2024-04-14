@@ -7,8 +7,8 @@
             >
             <div class="row w-100 h-100 d-flex align-content-center justify-content-center">
                 <div class="col-12 hero-content">
-                    <h2 class="hero-title"> Result-driven creative agency.</h2>
-                    <h5>We design & build brands, campaigns & digital projects for businesses large & small</h5>
+                    <h2 class="hero-title theme-color"> Result-driven creative agency.</h2>
+                    <h5 class="theme-color-2">We design & build brands, campaigns & digital projects for businesses large & small</h5>
                 </div>
             </div>
         </div>
@@ -70,7 +70,6 @@
         .hero-content {
             max-width: 500px;
             .hero-title {
-                color: #2ca2c9;
                 font-size: 55px;
                 font-weight: 600;
                 // res
@@ -82,7 +81,6 @@
                 }
             }
             h5 {
-                color: #cf7a3a;
                 font-size: 20px;
                 font-weight: 500;
                 line-height: 2;

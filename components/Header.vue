@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-6 d-flex align-items-center justify-content-end">
                     <div class="d-flex contact-us py-1">
-                    <a class="brook-btn bk-btn-red btn-rounded space-between"
+                    <a class="brook-btn bk-btn-gradient-pink btn-rounded space-between"
                         :class="isMobile ? 'btn-xs-size' : 'btn-sd-size'"
                         href="#contactUs">
                         Contact Us
@@ -71,9 +71,6 @@
         width: 100%;
         z-index: 999;
         position: fixed;
-    }
-    .contact-us {
-
     }
 
 </style>

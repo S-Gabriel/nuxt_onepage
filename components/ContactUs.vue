@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center pt-3 pb-3">
+    <div class="text-center ptb--50">
         <div class="basic-modern-dots">
             <div class="dot first-circle"></div>
             <div class="dot second-circle"></div>
@@ -92,7 +92,7 @@
                                             I’m available for commissions and collaborations, and i’m <br> excited to hear from you about new projects
                                         </div>
                                         <div class="form-submit">
-                                            <input type="submit" value="Send message">
+                                            <input class="submit-gradient" type="submit" value="Send message">
                                         </div>
                                     </div>
                                 </div>

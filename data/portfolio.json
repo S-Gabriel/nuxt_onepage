@@ -5,7 +5,7 @@
             "image": "/img/portfolio/portfolio-1/portfolio-1.jpg"
         }
     ],
-    
+
     "portfolioFeaturd": [
         {
             "id": 1,
@@ -54,25 +54,25 @@
     "portfolioItems": [
         {
             "id": 1,
-            "image": "/img/portfolio/grid/caption-1.jpg",
+            "image": "/img/portfolio/grid/graphic_design.jpg",
             "heading": "The Language of Designs",
-            "slug": "the-language-of-designs-1",
+            "slug": "#",
             "category": "Design",
             "filterClass": "creative digital"
         },
         {
             "id": 2,
-            "image": "/img/portfolio/grid/caption-2.jpg",
+            "image": "/img/portfolio/grid/marketing.jpg",
             "heading": "B-sharp High-end Audio",
-            "slug": "b-sharp-high-end-audio-2",
+            "slug": "#",
             "category": "Marketing",
             "filterClass": "photography design"
         },
         {
             "id": 3,
-            "image": "/img/portfolio/grid/caption-3.jpg",
+            "image": "/img/portfolio/grid/online_shop.jpg",
             "heading": "Smart Sound System",
-            "slug": "smart-sound-system-3",
+            "slug": "#",
             "category": "Photography",
             "filterClass": "photography creative"
         },
@@ -80,7 +80,7 @@
             "id": 4,
             "image": "/img/portfolio/grid/caption-4.jpg",
             "heading": "Awe-inspiring Projects",
-            "slug": "awe-inspiring-projects-4",
+            "slug": "#",
             "category": "Life Style",
             "filterClass": "design"
         },
@@ -88,7 +88,7 @@
             "id": 5,
             "image": "/img/portfolio/grid/caption-5.jpg",
             "heading": "Gifts for Photography",
-            "slug": "gifts-for-photography-5",
+            "slug": "#",
             "category": "Design",
             "filterClass": "creative"
         },
@@ -96,7 +96,7 @@
             "id": 6,
             "image": "/img/portfolio/grid/caption-6.jpg",
             "heading": "Enchanting Portrait Hacks",
-            "slug": "enchanting-portrait-hacks-6",
+            "slug": "#",
             "category": "Photography",
             "filterClass": "digital"
         },

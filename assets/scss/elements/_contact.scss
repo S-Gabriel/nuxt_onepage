@@ -1,5 +1,5 @@
 /* ============================
-    Contact Area 
+    Contact Area
     http://prntscr.com/m3ajf8
 =================================*/
 
@@ -181,8 +181,19 @@
 
 
 /* ========================
-Contact Form Style 01 
+Contact Form Style 01
 ============================*/
+.submit-gradient {
+    color: #fff;
+    border-color: transparent;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FF3F85), color-stop(85%, #FAA720));
+    background: -moz-linear-gradient(150deg, #FF3F85 40%, #FAA720 85%);
+    background: -webkit-linear-gradient(150deg, #FF3F85 40%, #FAA720 85%);
+    background: -o-linear-gradient(150deg, #FF3F85 40%, #FAA720 85%);
+    background: -ms-linear-gradient(150deg, #FF3F85 40%, #FAA720 85%);
+    background: linear-gradient(150deg, #FF3F85 40%, #FAA720 85%);
+    border-color: white;
+}
 
 .form-style--1 {
     .input-box {
@@ -292,8 +303,6 @@ Contact Form Style 01
                 box-shadow: 0 10px 20px rgba(0, 0, 0, .07);
                 font-family: $body-font;
                 color: #ffffff;
-                border-color: #0038E3;
-                background-color: #0038E3;
                 -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
                 transition: all .3s cubic-bezier(1, 0.03, 0, 0.99);
 
@@ -330,8 +339,6 @@ Contact Form Style 01
             height: 55px;
             line-height: 53px;
             color: #ffffff;
-            border-color: #0038E3;
-            background-color: #0038E3;
             font-size: 14px;
             font-weight: 600;
             font-family: $body-font;
@@ -629,15 +636,3 @@ Contact Form Style 01
     /* Firefox 18- */
     color: #001029;
 }
-
-
-
-
-
-
-
-
-
-
-
-
