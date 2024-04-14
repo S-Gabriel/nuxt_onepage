@@ -1,12 +1,15 @@
 <template>
     <div class="main-container">
-        <Header @togglenav="navOpen = !navOpen" @toggleSearch="searchOpen = !searchOpen" :isMobile="isMobile()"/>
+        <Header @togglenav="navOpen = !navOpen" @toggleSearch="searchOpen = !searchOpen" :isMobile="resizeForMobile"/>
         <OffCanvasMobileMenu :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" />
-        <Banner :isMobile="isMobile()"/>
+        <Banner :isMobile="resizeForMobile"/>
         <OurMission/>
-        <FeatureStartUp :isMobile="isMobile()"/>
-        <Portfolio addClass="ptb-md--80 ptb-sm--80 poss_relative"/>
+        <FeatureStartUp :isMobile="resizeForMobile"/>
+        <Portfolio addClass="poss_relative"/>
+        <CallToAction/>
+        <Testimonial/>
         <ContactUs/>
+        <Footer/>
         <!-- <EffectiveSolution /> -->
         <!-- <StartUpStratagy /> -->
         <!-- <PortfolioItemFilter /> -->
@@ -24,52 +27,49 @@
     import OurMission from "@/components/OurMission.vue"
     import ContactUs from "@/components/ContactUs.vue"
     import Portfolio from "@/components/Portfolio.vue"
+    import CallToAction from "@/components/CallToAction.vue"
+    import Testimonial from "@/components/Testimonial.vue"
+    import Footer from "@/components/Footer.vue"
     // import StartUpStratagy from "@/components/sections/StartUpStratagy"
     // import PortfolioItemFilter from "@/components/sections/PortfolioItemFilter"
 
+
+
+
     export default {
-        components: {
-            Header,
-            OffCanvasMobileMenu,
-            Banner,
-            OurMission,
-            FeatureStartUp,
-            Portfolio,
-            ContactUs,
-            // FeatureStartUp,
-            // StartUpStratagy,
-            // PortfolioItemFilter
-        },
+        setup () {
+            const navOpen = ref(false)
+            const searchOpen = ref(false)
+            const resizeForMobile = ref(null)
 
-        data() {
-            return {
-                width: document.documentElement.clientWidth,
-                height: document.documentElement.clientHeight,
-                navOpen: false,
-                searchOpen: false
-            }
-        },
-        methods: {
-            isMobile() {
-                this.width = document.documentElement.clientWidth;
-                this.height = document.documentElement.clientHeight;
+            onMounted( () => {
+                window.addEventListener('resize', isMobile)
+                isMobile()
+            })
+            onUnmounted(() => {
+                window.removeEventListener('resize', isMobile)
+            })
 
+            const isMobile = () => {
+                const width = window.innerWidth
+
+                console.log(width);
                 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                    return true;
-                } else if (this.width < 1200) {
-                    return true;
+                    resizeForMobile.value = true;
+                } else if (width < 1200) {
+                    resizeForMobile.value = true;
                 } else {
-                    return false;
+                    resizeForMobile.value = false;
                 }
             }
+
+            return {
+                navOpen,
+                searchOpen,
+                resizeForMobile,
+            }
         },
-        mounted () {
-            window.addEventListener('resize', this.isMobile);
-            document.body.classList.add('template-font-1', 'bg_color--16')
-        },
-        unmounted() {
-            window.removeEventListener('resize', this.isMobile);
-        },
+
     };
 </script>
 
@@ -81,4 +81,4 @@
     }
 
 
-</style>
+</style>index

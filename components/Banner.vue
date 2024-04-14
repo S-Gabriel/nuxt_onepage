@@ -1,12 +1,11 @@
 <template>
-    <div class="hero-startup bg-cover"
-        :style="getBgStyle(isMobile)">
-        <span v-if="!isMobile" class="bg-cover-svg"/>
+    <div class="hero-startup bg-cover">
+        <span class="bg-cover-svg"/>
             <div class="hero-container w-100 h-100"
-                :class="isMobile ? 'container-flex d-flex justify-content-center text-center': 'container'"
+                :class="isMobile ? 'container-flex d-flex justify-content-center text-center': 'container d-flex'"
             >
             <div class="row w-100 h-100 d-flex align-content-center justify-content-center">
-                <div class="col-12 hero-content">
+                <div class="col-6 hero-content">
                     <h2 class="hero-title theme-color"> Result-driven creative agency.</h2>
                     <h5 class="theme-color-2">We design & build brands, campaigns & digital projects for businesses large & small</h5>
                 </div>
@@ -18,16 +17,6 @@
 <script>
     export default {
         props: ['isMobile'],
-
-        methods: {
-            getBgStyle(isMobile) {
-                if (isMobile) {
-                    return 'background-position: center; background-size: 75%;'
-                } else {
-                    return 'background-position: right; background-size: 50%;'
-                }
-            },
-        },
     }
 </script>
 
@@ -36,6 +25,8 @@
 
     .hero-startup {
         background-image: url('/img/banner.png');
+        background-position:right;
+        background-size: 50%;
         height: 800px;
         display: flex;
         align-items: center;
@@ -43,12 +34,18 @@
         // res
         @media #{$md-layout}{
             height: 600px;
+            background-position:center;
+            background-size: 75%;
         }
         @media #{$sm-layout}{
-            height: 550px;;
+            height: 550px;
+            background-position:center;
+            background-size: 75%;
         }
         @media #{$small-mobile}{
             height: 450px;
+            background-position:center;
+            background-size: 75%;
         }
         &:before {
             width: 100%;

@@ -4,6 +4,7 @@
     "testimonials": [
         {
             "id": 1,
+            "title": "Wow best team ever",
             "name": "Yeasin Rony",
             "position": "PR Officer",
             "thumb": "/img/testimonial/clint-1/clint-1.jpg",
@@ -12,6 +13,7 @@
         },
         {
             "id": 2,
+            "title": "Wow best team ever",
             "name": "Tasnim Akter",
             "position": "PR Officer",
             "thumb": "/img/testimonial/clint-1/clint-2.jpg",
@@ -20,6 +22,7 @@
         },
         {
             "id": 3,
+            "title": "Wow best team ever",
             "name": "Uzzal Hossain",
             "position": "PR Officer",
             "thumb": "/img/testimonial/clint-1/clint-3.jpg",
@@ -28,6 +31,7 @@
         },
         {
             "id": 4,
+            "title": "Wow best team ever",
             "name": "Maria",
             "position": "PR Officer",
             "thumb": "/img/testimonial/clint-1/clint-4.jpg",
@@ -36,6 +40,7 @@
         },
         {
             "id": 5,
+            "title": "Wow best team ever",
             "name": "Bindu",
             "position": "PR Officer",
             "thumb": "/img/testimonial/clint-1/clint-5.jpg",
@@ -44,6 +49,7 @@
         },
         {
             "id": 6,
+            "title": "Wow best team ever",
             "name": "Raju",
             "position": "PR Officer",
             "thumb": "/img/testimonial/clint-1/clint-6.jpg",
@@ -52,6 +58,7 @@
         },
         {
             "id": 7,
+            "title": "Wow best team ever",
             "name": "Harley Mills",
             "position": "PR Officer",
             "thumb": "/img/testimonial/clint-1/clint-7.jpg",
